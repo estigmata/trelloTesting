@@ -6,7 +6,7 @@ export let config: Config = {
     browserName: 'chrome'
   },
   specs: [
-    'spec.js'
+    './test/e2e/specs/*.spec.js'
   ],
   seleniumAddress: 'http://localhost:4444/wd/hub',
   noGlobals: true
