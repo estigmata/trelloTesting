@@ -6,7 +6,11 @@ export class Home {
     return browser.get('https://trello.com/');
   }
 
-  getButtonLogin() {
-    return element(by.linkText('Log In')).getText();
+  getButton(name: string) {
+    return element(by.css(name));
+  }
+
+  getCurrentPage() {
+    return browser.getCurrentUrl();
   }
 }
